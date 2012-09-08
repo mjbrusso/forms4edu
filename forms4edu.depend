@@ -1,0 +1,330 @@
+# depslib dependency file v1.0
+1340666638 source:c:\users\marcos\documents\_devel\c++\forms4edu\src\input.cpp
+	"input.h"
+
+1340668275 c:\users\marcos\documents\_devel\c++\forms4edu\include\input.h
+	<iostream>
+	<sstream>
+	<string>
+
+1342386040 c:\users\marcos\documents\_devel\c++\forms4edu\include\io_form.h
+	<FL/Fl_Window.H>
+	<FL/Fl_Input.H>
+	<FL/Fl_Int_Input.H>
+	<FL/Fl_Float_Input.H>
+	<FL/fl_ask.H>
+	<FL/Fl.H>
+	<FL/Fl_Box.H>
+	<FL/Fl_Group.H>
+	<FL/fl_draw.H>
+	<FL/Fl_Check_Button.H>
+	<FL/Fl_Choice.H>
+	<FL/Fl_Output.H>
+	<string>
+	<input.h>
+	<vector>
+
+1296424546 c:\program files (x86)\codeblocks\fltk\include\fl\fl_window.h
+	"Fl_Group.H"
+
+1293937314 c:\program files (x86)\codeblocks\fltk\include\fl\fl_group.h
+	"Fl_Widget.H"
+
+1293935080 c:\program files (x86)\codeblocks\fltk\include\fl\fl_widget.h
+	"Enumerations.H"
+	<stdint.h>
+	<stddef.h>
+
+1295248900 c:\program files (x86)\codeblocks\fltk\include\fl\enumerations.h
+	"Fl_Export.H"
+	"fl_types.h"
+
+1291025200 c:\program files (x86)\codeblocks\fltk\include\fl\fl_export.h
+
+1291025200 c:\program files (x86)\codeblocks\fltk\include\fl\fl_types.h
+
+1291025200 c:\program files (x86)\codeblocks\fltk\include\fl\fl_ask.h
+	"Enumerations.H"
+
+1344556054 source:c:\users\marcos\documents\_devel\c++\forms4edu\main.cpp
+	<iostream>
+	<iomanip>
+	"forms4edu.h"
+
+1342718365 c:\users\marcos\documents\_devel\c++\forms4edu\forms4edu.h
+	<ioform.h>
+
+1297068372 c:\program files (x86)\codeblocks\fltk\include\fl\fl.h
+	<FL/Fl_Cairo.H>
+	"fl_utf8.h"
+	"Enumerations.H"
+
+1294356298 c:\program files (x86)\codeblocks\fltk\include\fl\fl_cairo.h
+	<FL/Fl_Export.H>
+	<cairo-xlib.h>
+	<cairo-win32.h>
+	<cairo-quartz.h>
+
+1291706542 c:\program files (x86)\codeblocks\fltk\include\fl\fl_utf8.h
+	"Fl_Export.H"
+	"fl_types.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<locale.h>
+	<ctype.h>
+	<wchar.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<sys/stat.h>
+	"Xutf8.h"
+	<X11/Xlocale.h>
+	<X11/Xlib.h>
+	<locale.h>
+
+1297164136 c:\program files (x86)\codeblocks\fltk\include\fl\xutf8.h
+	<X11/X.h>
+	<X11/Xlib.h>
+	<X11/Xlocale.h>
+	<X11/Xutil.h>
+
+1342385940 source:c:\users\marcos\documents\_devel\c++\forms4edu\src\io_form.cpp
+	"io_form.h"
+	<algorithm>
+	<FL/Fl_Input.H>
+	<FL/Fl_Return_Button.H>
+	<FL/fl_draw.H>
+	<FL/Fl.H>
+
+1293138798 c:\program files (x86)\codeblocks\fltk\include\fl\fl_input.h
+	"Fl_Input_.H"
+
+1292878140 c:\program files (x86)\codeblocks\fltk\include\fl\fl_input_.h
+	"Fl_Widget.H"
+
+1291899184 c:\program files (x86)\codeblocks\fltk\include\fl\fl_return_button.h
+	"Fl_Button.H"
+
+1291025200 c:\program files (x86)\codeblocks\fltk\include\fl\fl_button.h
+	"Fl_Widget.H"
+
+1297042344 c:\program files (x86)\codeblocks\fltk\include\fl\fl_draw.h
+	<FL/x.H>
+	<FL/Enumerations.H>
+	<FL/Fl_Window.H>
+	<FL/Fl_Device.H>
+
+1297034664 c:\program files (x86)\codeblocks\fltk\include\fl\x.h
+	"Enumerations.H"
+	"win32.H"
+	"mac.H"
+	<X11/Xlib.h>
+	<X11/Xutil.h>
+	<X11/Xatom.h>
+	"Fl_Window.H"
+	"Xutf8.h"
+
+1296971704 c:\program files (x86)\codeblocks\fltk\include\fl\win32.h
+	<windows.h>
+	<FL/Fl_Window.H>
+
+1297034664 c:\program files (x86)\codeblocks\fltk\include\fl\mac.h
+	<FL/Fl_Widget.H>
+	<AvailabilityMacros.h>
+	<ApplicationServices/ApplicationServices.h>
+	"Fl_Window.H"
+
+1297133374 c:\program files (x86)\codeblocks\fltk\include\fl\fl_device.h
+	<FL/x.H>
+	<FL/Fl_Plugin.H>
+	<FL/Fl_Image.H>
+	<FL/Fl_Bitmap.H>
+	<FL/Fl_Pixmap.H>
+	<FL/Fl_RGB_Image.H>
+
+1295935462 c:\program files (x86)\codeblocks\fltk\include\fl\fl_plugin.h
+	"Fl_Preferences.H"
+
+1291556296 c:\program files (x86)\codeblocks\fltk\include\fl\fl_preferences.h
+	<stdio.h>
+	"Fl_Export.H"
+
+1296426280 c:\program files (x86)\codeblocks\fltk\include\fl\fl_image.h
+	"Enumerations.H"
+
+1291025200 c:\program files (x86)\codeblocks\fltk\include\fl\fl_bitmap.h
+	"Fl_Image.H"
+
+1291025200 c:\program files (x86)\codeblocks\fltk\include\fl\fl_pixmap.h
+	"Fl_Image.H"
+
+1291025200 c:\program files (x86)\codeblocks\fltk\include\fl\fl_rgb_image.h
+	"Fl_Image.H"
+
+1291025200 c:\program files (x86)\codeblocks\fltk\include\fl\fl_box.h
+	"Fl_Widget.H"
+
+1291899184 c:\program files (x86)\codeblocks\fltk\include\fl\fl_check_button.h
+	"Fl_Light_Button.H"
+
+1294196978 c:\program files (x86)\codeblocks\fltk\include\fl\fl_light_button.h
+	"Fl_Button.H"
+
+1291899184 c:\program files (x86)\codeblocks\fltk\include\fl\fl_choice.h
+	"Fl_Menu_.H"
+
+1291025200 c:\program files (x86)\codeblocks\fltk\include\fl\fl_menu_.h
+	"Fl_Widget.H"
+	"Fl_Menu_Item.H"
+
+1291899846 c:\program files (x86)\codeblocks\fltk\include\fl\fl_menu_item.h
+	"Fl_Widget.H"
+	"Fl_Image.H"
+
+1292242864 c:\program files (x86)\codeblocks\fltk\include\fl\fl_input_choice.h
+	<FL/Fl.H>
+	<FL/Fl_Group.H>
+	<FL/Fl_Input.H>
+	<FL/Fl_Menu_Button.H>
+	<FL/fl_draw.H>
+	<string.h>
+
+1292199552 c:\program files (x86)\codeblocks\fltk\include\fl\fl_menu_button.h
+	"Fl_Menu_.H"
+
+1292242864 c:\program files (x86)\codeblocks\fltk\include\fl\fl_int_input.h
+	"Fl_Input.H"
+
+1293608026 c:\program files (x86)\codeblocks\fltk\include\fl\fl_float_input.h
+	"Fl_Input.H"
+
+1293608026 c:\program files (x86)\codeblocks\fltk\include\fl\fl_output.h
+	"Fl_Input.H"
+
+1344599669 c:\users\marcos\documents\_devel\c++\forms4edu\include\ioform.h
+	<FL/Fl_Window.H>
+	<FL/Fl_Input.H>
+	<FL/Fl_Secret_Input.H>
+	<FL/Fl_Int_Input.H>
+	<FL/Fl_Float_Input.H>
+	<FL/fl_ask.H>
+	<FL/Fl.H>
+	<FL/Fl_Box.H>
+	<FL/Fl_Group.H>
+	<FL/fl_draw.H>
+	<FL/Fl_Check_Button.H>
+	<FL/Fl_Choice.H>
+	<FL/Fl_Output.H>
+	<Fl/Fl_Spinner.H>
+	<Fl/Fl_Repeat_Button.H>
+	<string>
+	<sstream>
+	<vector>
+	<iomanip>
+
+1344600138 source:c:\users\marcos\documents\_devel\c++\forms4edu\src\ioform.cpp
+	"ioform.h"
+	<algorithm>
+	<iostream>
+	<FL/Fl_Input.H>
+	<FL/Fl_Return_Button.H>
+	<FL/fl_draw.H>
+	<FL/Fl.H>
+	<FL/fl_ask.H>
+	<FL/Fl_Native_File_Chooser.H>
+	<typeinfo>
+
+1292242864 c:\program files (x86)\codeblocks\fltk\include\fl\fl_secret_input.h
+	"Fl_Input.H"
+
+1296438620 c:\program files (x86)\codeblocks\fltk\include\fl\fl_spinner.h
+	<FL/Enumerations.H>
+	<FL/Fl_Group.H>
+	<FL/Fl_Input.H>
+	<FL/Fl_Repeat_Button.H>
+	<stdio.h>
+	<stdlib.h>
+
+1291025200 c:\program files (x86)\codeblocks\fltk\include\fl\fl_repeat_button.h
+	"Fl.H"
+	"Fl_Button.H"
+
+1297033648 c:\program files (x86)\codeblocks\fltk\include\fl\fl_native_file_chooser.h
+	<FL/Fl_Native_File_Chooser.H>
+	<FL/Fl_Native_File_Chooser.H>
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<commdlg.h>
+	<shlobj.h>
+	<FL/filename.H>
+	<FL/Fl_File_Chooser.H>
+	<unistd.h>
+	<FL/Fl_Native_File_Chooser.H>
+	<FL/Fl_Native_File_Chooser.H>
+
+1292898944 c:\program files (x86)\codeblocks\fltk\include\fl\filename.h
+	"/usr/include/dirent.h"
+	"Fl_Export.H"
+	<FL/filename.H>
+	<sys/types.h>
+	<direct.h>
+	<sys/types.h>
+	<dirent.h>
+
+1295303954 c:\program files (x86)\codeblocks\fltk\include\fl\fl_file_chooser.h
+	<FL/Fl.H>
+	<FL/Fl_Double_Window.H>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<FL/Fl_Group.H>
+	<FL/Fl_Choice.H>
+	<FL/Fl_Menu_Button.H>
+	<FL/Fl_Button.H>
+	<FL/Fl_Preferences.H>
+	<FL/Fl_Tile.H>
+	<FL/Fl_File_Browser.H>
+	<FL/Fl_Box.H>
+	<FL/Fl_Check_Button.H>
+	<FL/Fl_File_Input.H>
+	<FL/Fl_Return_Button.H>
+	<FL/fl_ask.H>
+
+1291025200 c:\program files (x86)\codeblocks\fltk\include\fl\fl_double_window.h
+	"Fl_Window.H"
+
+1291899184 c:\program files (x86)\codeblocks\fltk\include\fl\fl_tile.h
+	"Fl_Group.H"
+
+1295935462 c:\program files (x86)\codeblocks\fltk\include\fl\fl_file_browser.h
+	"Fl_Browser.H"
+	"Fl_File_Icon.H"
+	"filename.H"
+
+1291025200 c:\program files (x86)\codeblocks\fltk\include\fl\fl_browser.h
+	"Fl_Browser_.H"
+	"Fl_Image.H"
+
+1295003252 c:\program files (x86)\codeblocks\fltk\include\fl\fl_browser_.h
+	"Fl_Group.H"
+	"Fl_Scrollbar.H"
+	<FL/Fl.H>
+
+1291899184 c:\program files (x86)\codeblocks\fltk\include\fl\fl_scrollbar.h
+	"Fl_Slider.H"
+
+1291899184 c:\program files (x86)\codeblocks\fltk\include\fl\fl_slider.h
+	"Fl_Valuator.H"
+
+1291899184 c:\program files (x86)\codeblocks\fltk\include\fl\fl_valuator.h
+	"Fl_Widget.H"
+
+1295935462 c:\program files (x86)\codeblocks\fltk\include\fl\fl_file_icon.h
+	"Fl.H"
+
+1295935462 c:\program files (x86)\codeblocks\fltk\include\fl\fl_file_input.h
+	<FL/Fl_Input.H>
+

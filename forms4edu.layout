@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="forms4edu.h" open="0" top="0" tabpos="1">
+		<Cursor position="123" topLine="0" />
+	</File>
+	<File name="include\ioform.h" open="0" top="0" tabpos="2">
+		<Cursor position="445" topLine="9" />
+	</File>
+	<File name="src\ioform.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="4999" topLine="159" />
+	</File>
+</CodeBlocks_layout_file>
