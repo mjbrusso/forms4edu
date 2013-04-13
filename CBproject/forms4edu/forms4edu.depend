@@ -1,0 +1,267 @@
+# depslib dependency file v1.0
+1365855573 source:c:\users\marcosjosé\skydrive\documents\outros projetos\forms4edu\src\ioform.cpp
+	"ioform.h"
+	<algorithm>
+	<iostream>
+	<FL/Fl_Input.H>
+	<FL/Fl_Return_Button.H>
+	<FL/fl_draw.H>
+	<FL/Fl.H>
+	<FL/fl_ask.H>
+	<FL/Fl_Native_File_Chooser.H>
+	<typeinfo>
+
+1365854898 c:\users\marcosjosé\skydrive\documents\outros projetos\forms4edu\include\ioform.h
+	<FL/Fl_Window.H>
+	<FL/Fl_Input.H>
+	<FL/Fl_Secret_Input.H>
+	<FL/Fl_Int_Input.H>
+	<FL/Fl_Float_Input.H>
+	<FL/fl_ask.H>
+	<FL/Fl.H>
+	<FL/Fl_Box.H>
+	<FL/Fl_Group.H>
+	<FL/fl_draw.H>
+	<FL/Fl_Check_Button.H>
+	<FL/Fl_Choice.H>
+	<FL/Fl_Output.H>
+	<string>
+	<sstream>
+	<vector>
+	<iomanip>
+
+1352234774 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_window.h
+	"Fl_Group.H"
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_group.h
+	"Fl_Widget.H"
+
+1335211926 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_widget.h
+	"Enumerations.H"
+	<stdint.h>
+	<stddef.h>
+
+1355078758 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\enumerations.h
+	"Fl_Export.H"
+	"fl_types.h"
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_export.h
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_types.h
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_input.h
+	"Fl_Input_.H"
+
+1323190552 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_input_.h
+	"Fl_Widget.H"
+
+1343104642 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_secret_input.h
+	"Fl_Input.H"
+
+1343104642 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_int_input.h
+	"Fl_Input.H"
+
+1343104642 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_float_input.h
+	"Fl_Input.H"
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_ask.h
+	"Enumerations.H"
+
+1350564992 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl.h
+	<FL/Fl_Cairo.H>
+	"fl_utf8.h"
+	"Enumerations.H"
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_cairo.h
+	<FL/Fl_Export.H>
+	<cairo-xlib.h>
+	<cairo-win32.h>
+	<cairo-quartz.h>
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_utf8.h
+	"Fl_Export.H"
+	"fl_types.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<locale.h>
+	<ctype.h>
+	<wchar.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<sys/stat.h>
+	"Xutf8.h"
+	<X11/Xlocale.h>
+	<X11/Xlib.h>
+	<locale.h>
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\xutf8.h
+	<X11/X.h>
+	<X11/Xlib.h>
+	<X11/Xlocale.h>
+	<X11/Xutil.h>
+
+1345195086 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_box.h
+	"Fl_Widget.H"
+
+1336493734 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_draw.h
+	<FL/x.H>
+	<FL/Enumerations.H>
+	<FL/Fl_Window.H>
+	<FL/Fl_Device.H>
+
+1332521274 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\x.h
+	"Enumerations.H"
+	"win32.H"
+	"mac.H"
+	<X11/Xlib.h>
+	<X11/Xutil.h>
+	<X11/Xatom.h>
+	"Fl_Window.H"
+	"Xutf8.h"
+
+1331553350 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\win32.h
+	<windows.h>
+	<FL/Fl_Window.H>
+
+1352817942 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\mac.h
+	<FL/Fl_Widget.H>
+	<ApplicationServices/ApplicationServices.h>
+	"Fl_Window.H"
+
+1352234774 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_device.h
+	<FL/x.H>
+	<FL/Fl_Plugin.H>
+	<FL/Fl_Image.H>
+	<FL/Fl_Bitmap.H>
+	<FL/Fl_Pixmap.H>
+	<FL/Fl_RGB_Image.H>
+	<stdlib.h>
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_plugin.h
+	"Fl_Preferences.H"
+
+1326886798 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_preferences.h
+	<stdio.h>
+	"Fl_Export.H"
+
+1352476928 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_image.h
+	"Enumerations.H"
+	<stdlib.h>
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_bitmap.h
+	"Fl_Image.H"
+
+1352234774 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_pixmap.h
+	"Fl_Image.H"
+	"x.H"
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_rgb_image.h
+	"Fl_Image.H"
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_check_button.h
+	"Fl_Light_Button.H"
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_light_button.h
+	"Fl_Button.H"
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_button.h
+	"Fl_Widget.H"
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_choice.h
+	"Fl_Menu_.H"
+
+1323364212 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_menu_.h
+	"Fl_Widget.H"
+	"Fl_Menu_Item.H"
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_menu_item.h
+	"Fl_Widget.H"
+	"Fl_Image.H"
+
+1343104642 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_output.h
+	"Fl_Input.H"
+
+1343104642 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_return_button.h
+	"Fl_Button.H"
+
+1350645832 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_native_file_chooser.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<commdlg.h>
+	<shlobj.h>
+	<FL/Fl_File_Chooser.H>
+	<unistd.h>
+	<FL/filename.H>
+	<FL/Fl_Native_File_Chooser.H>
+	<FL/Fl_Native_File_Chooser.H>
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_file_chooser.h
+	<FL/Fl.H>
+	<FL/Fl_Double_Window.H>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<FL/Fl_Group.H>
+	<FL/Fl_Choice.H>
+	<FL/Fl_Menu_Button.H>
+	<FL/Fl_Button.H>
+	<FL/Fl_Preferences.H>
+	<FL/Fl_Tile.H>
+	<FL/Fl_File_Browser.H>
+	<FL/Fl_Box.H>
+	<FL/Fl_Check_Button.H>
+	<FL/Fl_File_Input.H>
+	<FL/Fl_Return_Button.H>
+	<FL/fl_ask.H>
+
+1343104642 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_double_window.h
+	"Fl_Window.H"
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_menu_button.h
+	"Fl_Menu_.H"
+
+1343104642 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_tile.h
+	"Fl_Group.H"
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_file_browser.h
+	"Fl_Browser.H"
+	"Fl_File_Icon.H"
+	"filename.H"
+
+1347921894 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_browser.h
+	"Fl_Browser_.H"
+	"Fl_Image.H"
+
+1317733856 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_browser_.h
+	"Fl_Group.H"
+	"Fl_Scrollbar.H"
+	<FL/Fl.H>
+
+1317536714 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_scrollbar.h
+	"Fl_Slider.H"
+
+1338219552 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_slider.h
+	"Fl_Valuator.H"
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_valuator.h
+	"Fl_Widget.H"
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_file_icon.h
+	"Fl.H"
+
+1350645832 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\filename.h
+	"/usr/include/dirent.h"
+	"Fl_Export.H"
+	<FL/filename.H>
+	<sys/types.h>
+	<direct.h>
+	<sys/types.h>
+	<dirent.h>
+
+1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_file_input.h
+	<FL/Fl_Input.H>
+
