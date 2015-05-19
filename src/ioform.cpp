@@ -13,20 +13,20 @@
 namespace forms4edu
 {
 
-void b0_cb(Fl_Widget* b, void* v)
+void b0_cb(Fl_Widget* b, void* v) // OK Button
 {
     ioform* f = static_cast<ioform *>(v);
     if(!f->validate()) return;
 
     f->set_canceled(false);
 
-    if(ioform::show_flag)
-        ioform::show_flag=false;
+    if(f->show_flag())
+        f->set_show_flag(false);
     else
         b->window()->hide();
 }
 
-void b1_cb(Fl_Widget* b, void* v)
+void b1_cb(Fl_Widget* b, void* v) // Cancel Button
 {
     ioform* f = static_cast<ioform *>(v);
     b->window()->hide();
@@ -35,7 +35,6 @@ void b1_cb(Fl_Widget* b, void* v)
 string ioform::ok_message="Ok";
 string ioform::cancel_message="Cancelar";
 string ioform::close_message="Fechar";
-bool ioform::show_flag;
 
 ioform::ioform(bool redirect_io, int pad, int spac, int fontsz)
 {
@@ -54,14 +53,21 @@ ioform::ioform(bool redirect_io, int pad, int spac, int fontsz)
     container()->end();
 
     if(redirect_io) {
-        std::cin.rdbuf(in().rdbuf());
-        std::cout.rdbuf(out().rdbuf());
+        //m_in = new istringstream;
+        std::cin.rdbuf(m_in.rdbuf());
+        //m_out =  new ostringstream;
+        std::cout.rdbuf(m_out.rdbuf());
     }
-    else window()->set_modal();
+    //else
+    window()->set_modal();
 }
 
 ioform::~ioform()
 {
+//    if(redirect_io) {
+//        delete m_in;
+//        delete m_out;
+//    }
     delete m_wnd;
 }
 
@@ -111,10 +117,12 @@ void ioform::adjust_layout(const char* b0, const char* b1)
     footer()->end();
 
     // Resize window and align fields
-    window()->size(wsize, footer()->y()+footer()->h());
+    // window()->size(wsize, footer()->y()+footer()->h());
+    window()->resize(100, 100, wsize, footer()->y()+footer()->h());
 }
 
-int ioform::add_field(Fl_Widget* o, const string& prompt, int flags) {
+int ioform::add_field(Fl_Widget* o, const string& prompt, int flags)
+{
     o->labelsize(font_size());
     o->copy_label(prompt.c_str());
     container()->add(o);
@@ -135,7 +143,8 @@ int ioform::add_field(Fl_Widget* o, const string& prompt, int flags) {
 //    return add_field(o, prompt, FIELD_IS_INPUT|FIELD_NEED_MEASURING|FIELD_AUTO_POSITION);
 //}
 
-int ioform::field_int_value(int i) {
+int ioform::field_int_value(int i)
+{
     Fl_Int_Input* pi = dynamic_cast<Fl_Int_Input*>(widget(i));
     if(pi) return to_number<int>(pi->value());
 
@@ -151,7 +160,8 @@ int ioform::field_int_value(int i) {
     return 0;
 }
 
-string ioform::field_string_value(int i) {
+string ioform::field_string_value(int i)
+{
     Fl_Input* pi = dynamic_cast<Fl_Input*>(widget(i));
     if(pi) return string(pi->value());
 
@@ -161,7 +171,8 @@ string ioform::field_string_value(int i) {
     return to_string<int>(field_int_value(i));
 }
 
-double ioform::field_float_value(int i) {
+double ioform::field_float_value(int i)
+{
     Fl_Float_Input* pf = dynamic_cast<Fl_Float_Input*>(widget(i));
     if(pf) return to_number<double>(pf->value());
 
@@ -171,15 +182,17 @@ double ioform::field_float_value(int i) {
     return double(field_int_value(i));
 }
 
-bool ioform::field_bool_value(int i) {
+bool ioform::field_bool_value(int i)
+{
     return bool(field_int_value(i));
 }
 
 
-int ioform::add_text(const string& prompt) {
+int ioform::add_text(const string& prompt)
+{
     Fl_Box* o= new Fl_Box(spacing(), curr_y, 340, 20);
     o->align(FL_ALIGN_LEFT|FL_ALIGN_INSIDE|FL_ALIGN_WRAP);
-    int n=add_field(o, prompt, FIELD_IS_OUPUT);
+    int n=add_field(o, prompt, FIELD_IS_OUTPUT);
 
     // Resize the box
     int w=0, h=0;
@@ -190,12 +203,13 @@ int ioform::add_text(const string& prompt) {
     return n;
 }
 
-string ioform::read(bool stay_open, const string& b0, const string& b1) {
+string ioform::read(bool stay_open, const string& b0, const string& b1)
+{
     string s="";
     if(!window()->visible())
         adjust_layout(b0.c_str(), b1.c_str());
 
-    ioform::show_flag = stay_open;
+    set_show_flag(stay_open);
     set_canceled(true);
     internal_show();
 
@@ -214,7 +228,8 @@ string ioform::read(bool stay_open, const string& b0, const string& b1) {
     return s;
 }
 
-void ioform::show(string b) {
+void ioform::show(string b)
+{
     adjust_layout(b.c_str());
     internal_show();
     set_canceled(false);
@@ -232,13 +247,14 @@ void ioform::internal_show()
         SendMessage(hw1,WM_NCPAINT,0,0);
 #endif
     }
-    bool sf=ioform::show_flag;
+    bool sf=show_flag();
 
-    while(window()->visible() && sf==ioform::show_flag)
+    while(window()->visible() && sf==show_flag())
         Fl::wait();
 }
 
-bool ioform::validate() {
+bool ioform::validate()
+{
     bool valid=true;
     for(int i=0; i<container()->children(); ++i) {
         if(!(field_flags[i]&FIELD_IS_INPUT) || field_flags[i]&FIELD_IS_OPTIONAL) continue;
@@ -251,8 +267,7 @@ bool ioform::validate() {
                 pi->redraw_label();
                 if(valid) pi->take_focus();
                 valid = false;
-            }
-            else {
+            } else {
                 pi->labelcolor(FL_FOREGROUND_COLOR);
                 pi->redraw_label();
             }
@@ -261,61 +276,67 @@ bool ioform::validate() {
     return valid;
 }
 
-void ioform::clear() {
+void ioform::clear()
+{
     container()->clear();
     Fl::delete_widget(footer());
     curr_y = padding();
     window()->label(0);
+    window()->size(Fl::w(), Fl::h());
     field_flags.clear();
 }
 
 // Immediate input dialogs
-int ioform::read_int(const string& prompt) {
+int ioform::read_int(const string& prompt)
+{
     add_int_input(prompt);
     string s=read();
     clear();
-    if(canceled()) return 0;
-    return to_number<int>(s);
+    return canceled()? 0 : to_number<int>(s);
 }
 
-double ioform::read_float(const string& prompt) {
+double ioform::read_float(const string& prompt)
+{
     add_float_input(prompt);
     string s=read();
     clear();
-    if(canceled()) return 0.0;
-    return to_number<double>(s);
+    return canceled() ? 0.0 : to_number<double>(s);
 }
 
-string ioform::read_string(const string& prompt) {
+string ioform::read_string(const string& prompt)
+{
     add_string_input(prompt, 20);
     string s=read();
     clear();
     return s;
 }
 
-string ioform::read_password(const string& prompt) {
+string ioform::read_password(const string& prompt)
+{
     add_secret_input(prompt);
     string s=read();
     clear();
     return s;
 }
 
-int ioform::read_choice(const string& prompt, const string& options) {
+int ioform::read_choice(const string& prompt, const string& options)
+{
     add_choice_input(prompt, options);
     string s=read();
     clear();
-    if(canceled()) return 0;
-    return to_number<int>(s);
+    return canceled()? 0 : to_number<int>(s);
 }
 
-void ioform::message(const string& prompt) {
+void ioform::message(const string& prompt)
+{
     ioform f(false, padding(), spacing(), font_size());
     f.window()->set_modal();
     f.add_text(prompt);
     f.show();
 }
 
-bool ioform::confirm(const string& prompt) {
+bool ioform::confirm(const string& prompt)
+{
     ioform f(false, padding(), spacing(), font_size());
     f.add_text(prompt);
     f.read();
@@ -331,7 +352,8 @@ void ioform::show_cout()
     out().str("");
 }
 
-string ioform::file_chooser(int type, int options) {
+string ioform::file_chooser(int type, int options)
+{
     Fl_Native_File_Chooser fc(type);
     fc.options(options);
 
@@ -347,15 +369,18 @@ string ioform::file_chooser(int type, int options) {
 }
 
 
-string ioform::select_input_file() {
+string ioform::select_input_file()
+{
     return file_chooser(Fl_Native_File_Chooser::BROWSE_FILE);
 }
 
-string ioform::select_output_file(bool confirm_replace) {
+string ioform::select_output_file(bool confirm_replace)
+{
     return file_chooser(Fl_Native_File_Chooser::BROWSE_SAVE_FILE, confirm_replace?Fl_Native_File_Chooser::SAVEAS_CONFIRM:0);
 }
 
-string ioform::select_folder() {
+string ioform::select_folder()
+{
     return file_chooser(Fl_Native_File_Chooser::BROWSE_DIRECTORY);
 }
 

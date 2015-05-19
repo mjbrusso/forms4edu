@@ -1,17 +1,13 @@
 # depslib dependency file v1.0
-1365855573 source:c:\users\marcosjosé\skydrive\documents\outros projetos\forms4edu\src\ioform.cpp
-	"ioform.h"
-	<algorithm>
+1432041601 source:c:\users\marcosjosé\skydrive\documents\github\forms4edu\examples\immdialogs\main.cpp
+	<forms4edu.h>
 	<iostream>
-	<FL/Fl_Input.H>
-	<FL/Fl_Return_Button.H>
-	<FL/fl_draw.H>
-	<FL/Fl.H>
-	<FL/fl_ask.H>
-	<FL/Fl_Native_File_Chooser.H>
-	<typeinfo>
 
-1365854898 c:\users\marcosjosé\skydrive\documents\outros projetos\forms4edu\include\ioform.h
+1421330188 c:\users\marcosjosé\skydrive\documents\github\forms4edu\include\forms4edu.h
+	<ioform.h>
+
+1432042177 c:\users\marcosjosé\skydrive\documents\github\forms4edu\include\ioform.h
+	<cmath>
 	<FL/Fl_Window.H>
 	<FL/Fl_Input.H>
 	<FL/Fl_Secret_Input.H>
@@ -25,6 +21,7 @@
 	<FL/Fl_Check_Button.H>
 	<FL/Fl_Choice.H>
 	<FL/Fl_Output.H>
+	<FL/Fl_Text_Display.H>
 	<string>
 	<sstream>
 	<vector>
@@ -184,62 +181,12 @@
 1343104642 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_output.h
 	"Fl_Input.H"
 
-1343104642 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_return_button.h
-	"Fl_Button.H"
-
-1350645832 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_native_file_chooser.h
-	<stdio.h>
-	<stdlib.h>
-	<windows.h>
-	<commdlg.h>
-	<shlobj.h>
-	<FL/Fl_File_Chooser.H>
-	<unistd.h>
-	<FL/filename.H>
-	<FL/Fl_Native_File_Chooser.H>
-	<FL/Fl_Native_File_Chooser.H>
-
-1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_file_chooser.h
-	<FL/Fl.H>
-	<FL/Fl_Double_Window.H>
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	<FL/Fl_Group.H>
-	<FL/Fl_Choice.H>
-	<FL/Fl_Menu_Button.H>
-	<FL/Fl_Button.H>
-	<FL/Fl_Preferences.H>
-	<FL/Fl_Tile.H>
-	<FL/Fl_File_Browser.H>
-	<FL/Fl_Box.H>
-	<FL/Fl_Check_Button.H>
-	<FL/Fl_File_Input.H>
-	<FL/Fl_Return_Button.H>
-	<FL/fl_ask.H>
-
-1343104642 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_double_window.h
-	"Fl_Window.H"
-
-1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_menu_button.h
-	"Fl_Menu_.H"
-
-1343104642 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_tile.h
+1317240528 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_text_display.h
+	"fl_draw.H"
 	"Fl_Group.H"
-
-1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_file_browser.h
-	"Fl_Browser.H"
-	"Fl_File_Icon.H"
-	"filename.H"
-
-1347921894 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_browser.h
-	"Fl_Browser_.H"
-	"Fl_Image.H"
-
-1317733856 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_browser_.h
-	"Fl_Group.H"
+	"Fl_Widget.H"
 	"Fl_Scrollbar.H"
-	<FL/Fl.H>
+	"Fl_Text_Buffer.H"
 
 1317536714 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_scrollbar.h
 	"Fl_Slider.H"
@@ -250,18 +197,7 @@
 1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_valuator.h
 	"Fl_Widget.H"
 
-1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_file_icon.h
-	"Fl.H"
-
-1350645832 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\filename.h
-	"/usr/include/dirent.h"
+1335020700 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_text_buffer.h
+	<assert.h>
 	"Fl_Export.H"
-	<FL/filename.H>
-	<sys/types.h>
-	<direct.h>
-	<sys/types.h>
-	<dirent.h>
-
-1311050970 c:\users\marcosjosé\skydrive\documents\devel\fltk\fltk-1.3.2\include\fl\fl_file_input.h
-	<FL/Fl_Input.H>
 

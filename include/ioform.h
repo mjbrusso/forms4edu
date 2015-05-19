@@ -2,6 +2,7 @@
 
 #ifndef ioform_H
 #define ioform_H
+#include <cmath>
 #include <FL/Fl_Window.H>
 #include <FL/Fl_Input.H>
 #include <FL/Fl_Secret_Input.H>
@@ -15,6 +16,7 @@
 #include <FL/Fl_Check_Button.H>
 #include <FL/Fl_Choice.H>
 #include <FL/Fl_Output.H>
+#include <FL/Fl_Text_Display.H>
 //#include <Fl/Fl_Spinner.H>
 
 #include <string>
@@ -44,7 +46,7 @@ string to_string(T n, int digits=-1) {
 
 enum form_field_flags {
     FIELD_IS_INPUT = 1,
-    FIELD_IS_OUPUT = (1<<1),
+    FIELD_IS_OUTPUT = (1<<1),
     FIELD_NEED_MEASURING = (1<<2),
     FIELD_AUTO_POSITION = (1<<3),
     FIELD_IS_OPTIONAL = (1<<4)
@@ -59,7 +61,7 @@ private:
     istringstream m_in;
     ostringstream m_out;
     int m_padding, m_spacing, m_fontsize, curr_y;
-    bool m_canceled;
+    bool m_canceled, m_show_flag;
     vector<int> field_flags;
 
     Fl_Group* container() const {
@@ -85,14 +87,13 @@ private:
 //    int add_spinner(const string& prompt, double minimum, double maximum, double step, int size, uchar type);
     string file_chooser(int type, int options=0);
 
-public:
     static string ok_message, cancel_message, close_message;
-    static bool show_flag;
+public:
 
     ioform(bool redirect_io=false, int pad=20, int spac=6, int fontsz=14);
     virtual ~ioform();
 
-    void set_title(const char * s) {
+    void set_title(const char *s) {
         window()->copy_label(s);
     }
     void set_title(string s) {
@@ -134,6 +135,13 @@ public:
     }
     bool canceled() const{
         return m_canceled;
+    }
+
+    void set_show_flag(bool c){
+        m_show_flag = c;
+    }
+    bool show_flag() const{
+        return m_show_flag;
     }
 
     string field_string_value(int i);
@@ -200,8 +208,19 @@ public:
         o->textsize(font_size());
         o->clear_visible_focus();
         o->color(FL_GRAY);
-        return add_field(o, prompt, FIELD_IS_OUPUT|FIELD_NEED_MEASURING|FIELD_AUTO_POSITION);
+        return add_field(o, prompt, FIELD_IS_OUTPUT|FIELD_NEED_MEASURING|FIELD_AUTO_POSITION);
     }
+
+//    int add_text_display(const string& prompt, int size=10) {
+//        static Fl_Text_Buffer *buff = new Fl_Text_Buffer();
+//        buff->text(prompt.c_str());
+//        Fl_Text_Display *o = new Fl_Text_Display(10, 10, 500, 300);
+//        o->buffer(buff);
+//        o->textsize(font_size());
+//        o->clear_visible_focus();
+//        o->color(FL_GRAY);
+//        return add_field(o, "", FIELD_IS_OUTPUT);
+//    }
 
     int add_text(const string& prompt);
 

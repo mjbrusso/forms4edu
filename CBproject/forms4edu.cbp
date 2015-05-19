@@ -2,38 +2,30 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="ImmInput" />
+		<Option title="forms4edu" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
-			<Target title="Debug">
-				<Option output="bin/Debug/ImmInput" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
-				<Option type="0" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-g" />
-				</Compiler>
-			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/ImmInput" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/forms4edu" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
 				<Option object_output="obj/Release/" />
-				<Option type="0" />
+				<Option type="2" />
 				<Option compiler="gcc" />
+				<Option createDefFile="1" />
 				<Compiler>
 					<Add option="-O2" />
-					<Add option="-s" />
+					<Add directory="../include" />
 				</Compiler>
 			</Target>
 		</Build>
 		<Compiler>
+			<Add option="-std=c++98" />
 			<Add option="-mms-bitfields" />
 			<Add option="-DWIN32" />
 			<Add directory="C:/Users/MarcosJosé/SkyDrive/Documents/Devel/fltk/fltk-1.3.2/include" />
-			<Add directory="../../include" />
 		</Compiler>
 		<Linker>
-			<Add library="libforms4edu" />
 			<Add library="fltk" />
 			<Add library="ole32" />
 			<Add library="uuid" />
@@ -43,11 +35,11 @@
 			<Add library="gdi32" />
 			<Add library="user32" />
 			<Add library="kernel32" />
-			<Add library="Comdlg32" />
 			<Add directory="C:/Users/MarcosJosé/SkyDrive/Documents/Devel/fltk/fltk-1.3.2/lib" />
-			<Add directory="../../CBproject/forms4edu/bin/Debug" />
 		</Linker>
-		<Unit filename="main.cpp" />
+		<Unit filename="../include/forms4edu.h" />
+		<Unit filename="../include/ioform.h" />
+		<Unit filename="../src/ioform.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
